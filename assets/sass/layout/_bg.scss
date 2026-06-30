@@ -46,11 +46,16 @@
 				'transform #{_duration(article)} ease-in-out',
 				'filter #{_duration(article)} ease-in-out'
 			));
-			background-image:		url('https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEWYptqQ8JWVc0UTzIqgJ7qYzsK_LdPxwACPSEAAgNwIVYXToujSiemWzwE.jpg');
 			background-position:	center;
 			background-size:		cover;
 			background-repeat:		no-repeat;
 			z-index: 1;
+		}
+
+		body.is-bg-loaded & {
+			&:after {
+				background-image:	url('https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEWYptqQ8JWVc0UTzIqgJ7qYzsK_LdPxwACPSEAAgNwIVYXToujSiemWzwE.jpg');
+			}
 		}
 
 		body.is-article-visible & {

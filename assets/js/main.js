@@ -28,6 +28,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
+				$body.addClass('is-bg-loaded');
 			}, 100);
 		});
 
